@@ -44,7 +44,7 @@ def fetch_repo(repo):
         f.write(html)
 
 repos: List[str]
-with open('repos.json') as f:
+with open(os.path.join(os.getcwd(), 'repos.json')) as f:
     repos = json.load(f)
 
 @app.route('/')
