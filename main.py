@@ -6,6 +6,8 @@ import dotenv
 from typing import List
 from flask import Flask, send_from_directory, abort, render_template, url_for
 
+app = Flask(__name__)
+
 dotenv.load_dotenv()
 USER = os.getenv("USER")
 
@@ -40,8 +42,6 @@ def fetch_repo(repo):
     # save index.html
     with open(os.path.join(template_path, f'{repo}.html'), 'w') as f:
         f.write(html)
-
-app = Flask(__name__)
 
 repos: List[str]
 with open('repos.json') as f:
