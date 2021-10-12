@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Computer Science Projects</title>
+    <script src="{{ url_for('static', filename='js/Home-Page.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Home-Page.css') }}">
+</head>
+<body onload="on_load()">
+    <div class="banner">
+        <div class="banner">
+            <img id="selector" src ="https://cdn-icons-png.flaticon.com/512/56/56763.png" width=35 heith =35 onclick="open_sidenav()">
+            <span class="banner">APCSP Project Hosting</span>
+        </div>
+        <div class="banner">
+            <span class="banner" id="name">Dylan Raiff</span>
+            <img class="banner_pfp" src="https://www.theflavorbender.com/wp-content/uploads/2014/09/Simpsons-Doughnuts-4238-Copy-1.jpg" 
+                width=35 height=35 href="">
+        </div>
+    </div>
+    <div class="secton" id="1">
+        <p class="header"><b>Welcome!</b></p>
+        <p class="body">
+            This is my custom hosting solution for my AP Computer Science Principles projects.<br>
+            The button in the top left opens the navigation menu, and the donut in the top right brings you to this site's repo.<br>
+        </p>
+    </div>
+    <div class="divider"></div>
+    <div class="secton" id="2">
+        <p class="header"><b>Why Did I Build This?</b></p>
+        <p class="body">
+            Thought it would be cool, mainly.
+        </p>
+    </div>
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="close_sidenav()">&times;</a>
+    </div>
+</body>
+</html>
