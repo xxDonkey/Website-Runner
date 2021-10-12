@@ -59,9 +59,16 @@ db.sqlite3
 
 # Flask stuff:
 instance/
-static/
-templates/
 .webassets-cache
+
+static/css/*
+!static/css/Home-Page.css
+
+static/js/*
+!static/js/Home-Page.js
+
+templates/*
+!templates/Home-Page.html
 
 # Scrapy stuff:
 .scrapy
